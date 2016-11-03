@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.mobiletrain.cameraandqrcodedemo.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取图库中的单张图片"
+                android:id="@+id/btnGetPictureFromLibrary"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取图库中的多张图片"
+                android:id="@+id/btnGetMultiPicturesFromLibrary"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取拍照的图片（缩略图）"
+                android:id="@+id/btnGetPictureFromCamera"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取拍照的图片（原图）"
+                android:id="@+id/btnGetOriPictureFromCamera"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取拍摄的视频"
+                android:id="@+id/btnGetVideoFromCamera"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取录制的音频"
+                android:id="@+id/btnGetAudio"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="扫描条形码、二维码"
+                android:id="@+id/btnScanCode"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
